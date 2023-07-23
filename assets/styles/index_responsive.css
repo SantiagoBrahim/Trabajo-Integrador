@@ -1,4 +1,5 @@
 @media (max-width: 1024px) {
+  /* =============== HEADER =============== */
   .nav__logo {
     width: 70px;
   }
@@ -15,9 +16,20 @@
     font-size: 1rem;
     padding: 10px;
   }
+  /* =============== HERO =============== */
+  .hero__h2 {
+    font-size: 2.8rem;
+  }
+  .hero__h3 {
+    font-size: 1.1rem;
+  }
+  .hero__link {
+    padding: 8px 12px;
+  }
 }
 
 @media (max-width: 900px) {
+  /* =============== HEADER =============== */
   .desktop-nav .ul,
   .desktop-nav .nav__register {
     display: none;
@@ -41,9 +53,14 @@
     padding: 15px 30px;
     font-size: 1.4rem;
   }
+  /* =============== HERO =============== */
+  .hero {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 768px) {
+  /* =============== HEADER =============== */
   .nav__search {
     display: none;
   }
@@ -54,13 +71,29 @@
     width: 300px;
     padding: 20px;
   }
+  /* =============== HERO =============== */
+  .hero__h2 {
+    font-size: 2.6rem;
+  }
+  .hero__link {
+    padding: 5px 10px;
+  }
+  .hero__img {
+    min-width: 50px;
+    max-width: 800px;
+  }
 }
 @media (max-width: 425px) {
+  /* =============== HEADER =============== */
   .nav__logo {
     width: 60px;
   }
   .title {
     font-size: 2.6rem;
+  }
+  /* =============== HERO =============== */
+  .hero__img {
+    display: none;
   }
 }
 
@@ -73,6 +106,11 @@
   }
   .search__mobile .search__input {
     width: 250px;
+  }
+  .hero__buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 

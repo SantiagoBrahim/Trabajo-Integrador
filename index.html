@@ -12,9 +12,12 @@
     <title>Cinemania</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
+      <!-- NAVBAR ESCRITORIO -->
       <nav class="desktop-nav">
         <div class="nav__div">
+          <!-- LOGO -->
           <a href="#">
             <img
               src="assets/imgs/Logo.png"
@@ -22,35 +25,66 @@
               class="nav__logo"
             />
           </a>
+          <!-- BOTONES DE NAVEGACION (Popular, Nuevo) -->
           <ul class="nav__ul ul">
             <li><a href="#" class="nav__link">Populares</a></li>
             <li><a href="#" class="nav__link">Nuevo</a></li>
           </ul>
         </div>
+        <!-- TÍTULO -->
         <h1 class="title">Cinemania</h1>
+        <!-- BARRA DE BÚSQUEDA -->
         <div class="nav__search search">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Buscar..." class="search__input" />
         </div>
+        <!-- BOTÓN DE REGISTRO -->
         <a href="#" class="nav__register">Registrarse</a>
         <div class="cel-nav">
+          <!-- BOTON DEL MENÚ HAMBURGUESA -->
           <label for="menu-checkbox" class="menu-icon"
             ><i class="fa-solid fa-bars"></i
           ></label>
         </div>
       </nav>
     </header>
+    <!-- CHECKBOX PARA EL MENÚ HAMBURGUESA -->
     <input type="checkbox" id="menu-checkbox" />
+    <!-- CONTENIDO DEL MENÚ HAMBURGUESA -->
     <div class="menu">
+      <!-- BARRA DE BÚSQUEDA -->
       <div class="nav__search search__mobile">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Buscar..." class="search__input" />
       </div>
-      <ul class="nav__ul ul">
+      <!-- BOTONES DE NAVEGACIÓN (Populares, Nuevo) -->
+      <ul class="nav__ul">
         <li><a href="#" class="nav__link">Populares</a></li>
         <li><a href="#" class="nav__link">Nuevo</a></li>
       </ul>
+      <!-- LINK DE REGISTRO -->
       <a href="#" class="nav__register">Registrarse</a>
     </div>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__container">
+          <h2 class="hero__h2">
+            ¡Sumérgete en un mar de emocionantes historias!
+          </h2>
+          <h3 class="hero__h3">
+            ¡No esperes más para vivir la mejor experiencia cinematográfica!
+            Regístrate ahora y accede a miles de películas en streaming.
+            ¡Disfruta del cine sin límites desde cualquier dispositivo, en
+            cualquier momento!
+          </h3>
+          <div class="hero__buttons">
+            <a href="#" class="hero__link">¡Únete ahora!</a>
+            <a href="#" class="hero__link">Catálogo</a>
+          </div>
+        </div>
+        <img src="assets/imgs/Cine.jpg" alt="Cine" class="hero__img" />
+      </section>
+    </main>
   </body>
 </html>
