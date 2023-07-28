@@ -281,18 +281,18 @@ header {
 
 /* =============== CARDS  =============== */
 
-/* =============== PELÍCULAS POPULARES  =============== */
+/* =============== PELÍCULAS  =============== */
 
-.popular-title {
+.movie-title {
   font-family: "Signika", sans-serif;
   font-size: 2.6rem;
   text-align: center;
   padding-top: 50px;
-  border-bottom: 2px solid var(--secondary3);
+  border-bottom: 2px solid;
   padding-top: 120px;
 }
 
-.popular-list {
+.movie-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -302,43 +302,45 @@ header {
   gap: 100px;
 }
 
-.popular-movie {
+.movie {
   width: 220px;
   position: relative;
   height: 450px;
   color: var(--text);
 }
 
-.popular-movie__link {
+.movie__link {
   text-decoration: none;
 }
 
-.popular-movie__normal {
+.movie__normal {
   padding: 10px;
   background: var(--gray);
   border-radius: 10px;
-  box-shadow: 0px 0px 20px 4px var(--primary);
   background-position: center;
   transition: all 0.8s;
 }
 
-.popular-movie__normal img {
+.movie__normal img {
   width: 200px;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid var(--primary);
+  border: 2px solid;
 }
 
-.popular-movie__normal h4 {
+.movie__normal h4 {
   font-size: 1.1rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* HOVER */
 
-.popular-movie__hover {
+.movie__hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -347,7 +349,8 @@ header {
   opacity: 0;
   transition: all 0.4s;
 }
-.popular-hover__img {
+
+.movie-hover__img {
   width: 200px;
   height: 300px;
   object-fit: cover;
@@ -355,215 +358,83 @@ header {
   transform: translateY(-70px);
 }
 
-.popular-hover__title {
+.movie-hover__title {
   width: 200px;
   transform: translateY(-40px);
 }
 
-.popular-movie__text {
+.movie-hover__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
   transform: translateY(-40px);
 }
 
-.popular-movie__duration {
+.movie__duration {
   text-decoration: underline;
 }
 
-.popular-movie__min-age {
+.movie__min-age {
   background: var(--lightgray);
   border-radius: 8px;
   padding: 5px;
 }
 
-.popular-movie__genre {
+.movie__genre {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
   transform: translateY(-40px);
 }
 
-.popular-movie__genre p {
+.movie__genre p {
   font-size: 0.8rem;
   padding: 4px;
   background: var(--gray);
   border-radius: 8px;
 }
-
-.popular-movie__qualification {
+.movie__qualification {
   text-align: center;
   transform: translateY(-40px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.popular-movie__qualification span {
+.movie__qualification span {
   font-size: 1.5rem;
 }
 
 /* ================== HOVER ================== */
 
-.popular-movie:hover {
+.movie:hover {
   perspective: 300px;
   cursor: pointer;
 }
 
-.popular-movie:hover > .popular-movie__normal {
+.movie:hover > .movie__normal {
   transform: rotateX(10deg) rotateY(0deg);
   transform-style: preserve-3d;
   box-shadow: none;
 }
 
-.popular-movie:hover > .popular-movie__normal > img {
+.movie:hover > .movie__normal > img {
   opacity: 0;
 }
 
-.popular-movie:hover > .popular-movie__normal > h4 {
+.movie:hover > .movie__normal > h4 {
   opacity: 0;
 }
 
-.popular-movie:hover > .popular-movie__hover {
+.movie:hover > .movie__hover {
   opacity: 1;
 }
 
-.popular-movie:hover > .popular-movie__hover > .popular-hover__img {
+.movie:hover > .movie__hover > .movie-hover__img {
   animation: fadeDown 1s forwards;
 }
 
-.popular-movie:hover > .popular-movie__hover > .popular-hover__title {
+.movie:hover > .movie__hover > .movie-hover__title {
   animation: fadeUp 1s forwards;
-}
-
-/* CAMBIOS PELICULA AVENGERS: ENDGAME */
-.popular-movie:hover > .avengers {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/Endgame.webp");
-  background-position: center;
-  background-size: cover;
-}
-
-/* CAMBIOS PELICULA TITANIC */
-
-.popular-movie:hover > .titanic {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/Titanic.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-/* CAMBIOS PELICULA AVATAR */
-
-.popular-movie:hover > .avatar {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/avatar.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-/* CAMBIOS PELICULA HARRY POTTER */
-
-.popular-movie:hover > .harry_potter {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/harry_potter.jpg");
-  background-position: center;
-  background-size: cover;
-}
-/* CAMBIOS PELICULA MESSI */
-
-.popular-movie:hover > .messi {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/messi.jpg");
-  background-position: center;
-  background-size: cover;
-}
-/* CAMBIOS PELICULA RAPIDOS Y FURIOSOS */
-
-.popular-movie:hover > .fast_furious {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/rapidos_y_furiosos.webp");
-  background-position: center;
-  background-size: cover;
-}
-/* CAMBIOS PELICULA JURASSIC PARK */
-
-.popular-movie:hover > .jurassic_park {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/Jurassic_park.jpg");
-  background-position: center;
-  background-size: cover;
-}
-/* CAMBIOS PELICULA STAR WARS */
-
-.popular-movie:hover > .star_wars {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/star_wars.jpg");
-  background-position: center;
-  background-size: cover;
-}
-/* CAMBIOS PELICULA STAR WARS */
-
-.popular-movie:hover > .lord_of_the_rings {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/lord_of_the_rings.jpg");
-  background-position: center;
-  background-size: cover;
-}
-.popular-movie:hover > .pirates_of_the_caribbean {
-  background: linear-gradient(
-      to top,
-      var(--gray),
-      transparent,
-      var(--background)
-    ),
-    url("../imgs/piratas_del_caribe.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 /* ================== ANIMACIONES ================== */
@@ -587,4 +458,158 @@ header {
     transform: translateY(-50px);
     opacity: 1;
   }
+}
+
+/* =============== PELÍCULAS POPULARES  =============== */
+
+.popular-title {
+  border-color: var(--secondary);
+}
+
+.popular-movie__normal {
+  box-shadow: 0px 0px 20px 4px var(--primary);
+}
+
+.popular-movie__normal img {
+  border-color: var(--primary);
+}
+
+/* CAMBIOS PELICULA AVENGERS: ENDGAME */
+.movie:hover > .avengers {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/Endgame.webp");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #7300ff;
+}
+/* CAMBIOS PELICULA TITANIC */
+
+.movie:hover > .titanic {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/Titanic.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ff6a00;
+}
+
+/* CAMBIOS PELICULA AVATAR */
+
+.movie:hover > .avatar {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/avatar.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #0084ff;
+}
+
+/* CAMBIOS PELICULA HARRY POTTER */
+
+.movie:hover > .harry_potter {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/harry_potter.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px rgb(56, 137, 118);
+}
+/* CAMBIOS PELICULA MESSI */
+
+.movie:hover > .messi {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/messi.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #00e1ff;
+}
+/* CAMBIOS PELICULA RAPIDOS Y FURIOSOS */
+
+.movie:hover > .fast_furious {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/rapidos_y_furiosos.webp");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #c6c6c6;
+}
+/* CAMBIOS PELICULA JURASSIC PARK */
+
+.movie:hover > .jurassic_park {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/Jurassic_park.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ffae00;
+}
+/* CAMBIOS PELICULA STAR WARS */
+
+.movie:hover > .star_wars {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/star_wars.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ff0000;
+}
+/* CAMBIOS PELICULA EL SEÑOR DE LOS ANILLOS */
+
+.movie:hover > .lord_of_the_rings {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/lord_of_the_rings.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ffe600;
+}
+.movie:hover > .pirates_of_the_caribbean {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/piratas_del_caribe.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ff3700;
 }
