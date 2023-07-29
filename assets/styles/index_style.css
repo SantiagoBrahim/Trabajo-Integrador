@@ -299,7 +299,7 @@ header {
   padding: 30px;
   padding-top: 50px;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 90px;
 }
 
 .movie {
@@ -348,6 +348,9 @@ header {
   padding: 10px;
   opacity: 0;
   transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .movie-hover__img {
@@ -463,7 +466,7 @@ header {
 /* =============== PELÍCULAS POPULARES  =============== */
 
 .popular-title {
-  border-color: var(--secondary);
+  border-color: var(--primary2);
 }
 
 .popular-movie__normal {
@@ -601,6 +604,8 @@ header {
   background-size: cover;
   box-shadow: 0px 0px 20px 4px #ffe600;
 }
+
+/* CAMBIOS PIRATAS DEL CARIBE */
 .movie:hover > .pirates_of_the_caribbean {
   background: linear-gradient(
       to top,
@@ -612,4 +617,123 @@ header {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 20px 4px #ff3700;
+}
+
+/* =============== NOVEDADES  =============== */
+
+.new-title {
+  border-color: var(--secondary2);
+}
+
+.new-movie__normal {
+  box-shadow: 0px 0px 20px 4px var(--secondary);
+}
+
+.new-movie__normal img {
+  border-color: var(--secondary);
+}
+
+/* CAMBIOS BARBIE */
+.movie:hover > .barbie {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/barbie.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ffa1ff;
+}
+/* CAMBIOS OPPENHEIMER */
+.movie:hover > .oppenheimer {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/oppenheimer.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ff6600;
+}
+/* CAMBIOS ELEMENTAL */
+.movie:hover > .elemental {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/elemental.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #00b3ff;
+}
+/* CAMBIOS SPIDERMAN */
+.movie:hover > .spiderman {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/spiderman.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ff0000;
+}
+/* CAMBIOS TRANSFORMERS */
+.movie:hover > .transformers {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/transformer.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #00a677;
+}
+/* CAMBIOS MARIO BROS */
+.movie:hover > .mario {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/mario.avif");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #0000ff;
+}
+/* CAMBIOS INDIANA JONES */
+.movie:hover > .indiana_jones {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/indiana_jones.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #fff58b;
+}
+/* CAMBIOS MISION IMPOSIBLE */
+.movie:hover > .mision_imposible {
+  background: linear-gradient(
+      to top,
+      var(--gray),
+      transparent,
+      var(--background)
+    ),
+    url("../imgs/mision_imposible.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px 4px #ededed;
 }

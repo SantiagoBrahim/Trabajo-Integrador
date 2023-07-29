@@ -30,6 +30,12 @@
   .about__text {
     max-width: 800px;
   }
+
+  /* =============== CARDS =============== */
+  /* =============== PELÍCULAS =============== */
+  .movie-list {
+    gap: 120px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -136,11 +142,21 @@
   .about__text {
     max-width: 300px;
   }
+
+  /* =============== CARDS =============== */
+  /* =============== PELÍCULAS =============== */
+  .movie-title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 320px) {
+  /* =============== HEADER =============== */
   header {
     padding: 5px;
+  }
+  .menu-icon {
+    font-size: 1.5rem;
   }
   .title {
     font-size: 2rem;
@@ -151,5 +167,11 @@
   /* =============== ABOUT =============== */
   .about__text {
     max-width: 250px;
+  }
+
+  /* =============== CARDS =============== */
+  /* =============== PELÍCULAS =============== */
+  .movie-title {
+    font-size: 2rem;
   }
 }
