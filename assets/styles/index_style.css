@@ -284,7 +284,7 @@ header {
 /* =============== PELÍCULAS  =============== */
 
 .movie-title {
-  font-family: "Signika", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.6rem;
   text-align: center;
   padding-top: 50px;
@@ -740,9 +740,10 @@ header {
 
 /* =============== LISTA DE GENEROS =============== */
 .genre-list__title {
-  font-size: 2rem;
+  font-size: 2.6rem;
   text-align: center;
   padding-top: 120px;
+  font-family: "Montserrat", sans-serif;
 }
 .genres__list {
   display: flex;
@@ -838,9 +839,10 @@ header {
 .genre__title {
   padding: 5px;
   padding-top: 120px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
   border-bottom: 2px solid var(--primary);
+  font-family: "Montserrat", sans-serif;
 }
 
 .genero {
