@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/index_style.css" />
     <link rel="stylesheet" href="assets/styles/index_responsive.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/imgs/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/imgs/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/imgs/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/imgs/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/imgs/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/imgs/favicon/safari-pinned-tab.svg"
+      color="#c92c39"
+    />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#141414" />
+
     <script
       src="https://kit.fontawesome.com/35cf0206f1.js"
       crossorigin="anonymous"
     ></script>
+
     <title>Cinemania</title>
   </head>
   <body>
@@ -944,5 +978,57 @@
         </div>
       </section>
     </main>
+    <hr class="divisor-main-footer" />
+    <footer>
+      <div class="footer-container">
+        <div class="footer__redes">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="footer__info">
+          <a href="#">Centro de ayuda</a>
+          <a href="#">Tarjetas de regalo</a>
+          <a href="#">Prensa</a>
+          <a href="#">Empleo</a>
+          <a href="#">Términos de uso</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Avisos legales</a>
+          <a href="#">Preferencias de cookies</a>
+          <a href="#">Información corporativa</a>
+        </div>
+        <div class="footer__contact">
+          <h4>📞Contáctanos</h4>
+          <form class="contact__form">
+            <div class="form__input-container">
+              <label for="name">Nombre y Apellido:</label>
+              <input type="text" id="name" placeholder="Juan Pérez" required />
+            </div>
+            <div class="form__input-container">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="juanperez@gmail.com"
+                required
+              />
+            </div>
+            <label for="coments">Comentarios:</label>
+            <textarea
+              id="coments"
+              placeholder="Describe tu problema"
+              required
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+        <div class="footer__copyright">
+          <i class="fa-regular fa-copyright"></i>
+          2023 Cinemania
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
