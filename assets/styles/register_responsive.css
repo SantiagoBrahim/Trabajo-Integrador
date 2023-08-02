@@ -1,0 +1,181 @@
+@media (max-width: 1024px) {
+  .form-container h2 {
+    font-size: 2.4rem;
+  }
+  .form-container p {
+    font-size: 1rem;
+  }
+
+  .input-container label {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  .input-container input {
+    font-size: 1rem;
+  }
+
+  main .background-img {
+    width: 800px;
+  }
+  .plan label {
+    width: fit-content;
+  }
+  .plan label p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  /* ============= HEADER ============= */
+  header {
+    justify-content: center;
+    z-index: 20;
+  }
+  .login-btn {
+    display: none;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  .nav__logo {
+    width: 80px;
+  }
+  /* ============= MAIN ============= */
+  main .background-img {
+    background-image: linear-gradient(to top, transparent, var(--background)),
+      url("../imgs/registro/fondo.jpg");
+    background-size: cover;
+    z-index: 0;
+    width: 100vw;
+  }
+
+  .form-container {
+    position: absolute;
+    top: 110px;
+    z-index: 10;
+    background: var(--gray);
+    border-radius: 15px;
+    margin: 20px;
+    padding: 5px;
+  }
+  .form-container h2 {
+    font-size: 2rem;
+  }
+  .form-container p {
+    font-size: 1rem;
+  }
+  .input-container label {
+    font-size: 0.9rem;
+  }
+  .input-container input {
+    background: var(--background);
+  }
+  .plan label {
+    background: var(--background);
+  }
+
+  input[type="submit"] {
+    background: var(--background);
+  }
+}
+
+@media (max-width: 425px) {
+  /* ============= HEADER ============= */
+  .title {
+    font-size: 2.5rem;
+  }
+  .nav__logo {
+    width: 60px;
+  }
+
+  /* ============= MAIN ============= */
+  .background-img {
+    display: none;
+  }
+
+  main {
+    background: linear-gradient(
+      to bottom,
+      var(--primary3),
+      var(--secondary),
+      var(--background) 75%
+    );
+  }
+
+  .form-container {
+    position: static;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  .form-container form {
+    padding: 20px 5px;
+  }
+  .form-container h2 {
+    font-size: 2rem;
+  }
+  .form-container p {
+    font-size: 1.1rem;
+  }
+
+  .form__plans {
+    flex-direction: column;
+  }
+  .plan label {
+    width: 90vw;
+    background: var(--gray);
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+  .input-container label {
+    font-size: 1.1rem;
+  }
+  .input-container input {
+    background: var(--gray);
+    font-size: 1.2rem;
+  }
+
+  .container-checkbox {
+    flex-direction: row;
+  }
+
+  input[type="submit"] {
+    background: var(--gray);
+  }
+  .plan label p {
+    font-size: 1rem;
+  }
+  .plan label h4 {
+    font-size: 1.1rem;
+  }
+  .container-checkbox label {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* ============= HEADER ============= */
+  .title {
+    font-size: 2.1rem;
+  }
+  .nav__logo {
+    width: 50px;
+  }
+  /* ============= MAIN ============= */
+
+  .container-checkbox label {
+    font-size: 1rem;
+    max-width: 200px;
+  }
+  .form-container p {
+    font-size: 1rem;
+  }
+}
