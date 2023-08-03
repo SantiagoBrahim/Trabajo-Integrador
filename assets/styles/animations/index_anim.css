@@ -1,0 +1,155 @@
+/* =============== ANIMACIONES  =============== */
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =============== HEADER  =============== */
+
+.desktop-nav {
+  animation: fadeDown 1s;
+}
+
+/* =============== HERO  =============== */
+.hero__h2 {
+  animation: fadeRight 1s 0.4s forwards;
+}
+
+.hero__h3 {
+  animation: fadeRight 1s 0.6s forwards;
+}
+
+.hero__buttons {
+  animation: opacity 1s 0.8s forwards;
+}
+
+.hero__img {
+  animation: fadeLeft 1s 0.4s forwards;
+}
+
+/* =============== ABOUT  =============== */
+.about {
+  animation: fadeUp 1s 1s forwards;
+}
+
+/* =============== CARDS  =============== */
+/* PELÍCULAS */
+
+.movie-title {
+  animation: opacity 1s 1.2s forwards;
+}
+
+.movie-list .movie__link:nth-child(1) {
+  animation: fadeUp 1s 1.3s forwards;
+}
+.movie-list .movie__link:nth-child(2) {
+  animation: fadeUp 1s 1.4s forwards;
+}
+.movie-list .movie__link:nth-child(3) {
+  animation: fadeUp 1s 1.5s forwards;
+}
+.movie-list .movie__link:nth-child(4) {
+  animation: fadeUp 1s 1.6s forwards;
+}
+.movie-list .movie__link:nth-child(5) {
+  animation: fadeUp 1s 1.7s forwards;
+}
+.movie-list .movie__link:nth-child(6) {
+  animation: fadeUp 1s 1.8s forwards;
+}
+.movie-list .movie__link:nth-child(7) {
+  animation: fadeUp 1s 1.9s forwards;
+}
+.movie-list .movie__link:nth-child(8) {
+  animation: fadeUp 1s 2s forwards;
+}
+.movie-list .movie__link:nth-child(9) {
+  animation: fadeUp 1s 2.1s forwards;
+}
+.movie-list .movie__link:nth-child(10) {
+  animation: fadeUp 1s 2.2s forwards;
+}
+
+/* =============== LISTA DE GENEROS  =============== */
+
+.genre-list__title {
+  animation: opacity 1s 2.4s forwards;
+}
+
+.genres__list .genre:nth-child(1) {
+  animation: opacity 1s 2.5s forwards;
+}
+.genres__list .genre:nth-child(2) {
+  animation: opacity 1s 2.6s forwards;
+}
+.genres__list .genre:nth-child(3) {
+  animation: opacity 1s 2.7s forwards;
+}
+.genres__list .genre:nth-child(4) {
+  animation: opacity 1s 2.8s forwards;
+}
+.genres__list .genre:nth-child(5) {
+  animation: opacity 1s 2.9s forwards;
+}
+
+/* =============== GENEROS  =============== */
+.genre__title {
+  animation: opacity 1s 3.1s forwards;
+}
+
+.genero {
+  animation: fadeUp 1s 3.2s forwards;
+}
+
+/* =============== FOOTER  =============== */
+footer {
+  animation: fadeUp 1s 3.8s forwards;
+}

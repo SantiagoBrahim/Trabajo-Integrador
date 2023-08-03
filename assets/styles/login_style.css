@@ -60,6 +60,7 @@ header {
   box-shadow: 0px 0px 8px 1px var(--secondary);
   border-radius: 100%;
   transition: all 0.2s;
+  opacity: 0;
 }
 
 .nav__logo:hover {
@@ -69,6 +70,7 @@ header {
 .title {
   font-family: "Signika", sans-serif;
   font-size: 3.6rem;
+  opacity: 0;
 }
 .register-btn {
   font-size: 1.2rem;
@@ -79,6 +81,7 @@ header {
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.2s;
+  opacity: 0;
 }
 
 .register-btn:hover {
@@ -111,11 +114,16 @@ main {
   font-size: 3rem;
   font-family: "Signika", sans-serif;
   text-align: center;
+  opacity: 0;
 }
 
 .form-container p {
   font-size: 1.1rem;
   text-align: center;
+}
+
+.form__subtitle {
+  opacity: 0;
 }
 
 .form-container form {
@@ -132,6 +140,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  opacity: 0;
 }
 
 .input-container label {
@@ -180,6 +189,7 @@ input[type="submit"] {
   border: 2px solid var(--text);
   background: var(--gray);
   color: var(--text);
+  opacity: 0;
 }
 
 input[type="submit"]:hover {
@@ -206,6 +216,10 @@ a:hover {
   color: var(--primary3);
 }
 
+.register-p {
+  opacity: 0;
+}
+
 main .background-img {
   background-image: linear-gradient(to left, transparent, var(--background)),
     url("../imgs/login/fondo.jpg");
@@ -214,4 +228,5 @@ main .background-img {
   padding: 20px;
   width: 1000px;
   height: calc(100vh - 110px);
+  opacity: 0;
 }

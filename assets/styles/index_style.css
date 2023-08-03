@@ -217,15 +217,18 @@ header {
   font-style: italic;
   font-size: 3rem;
   font-weight: 700;
+  opacity: 0;
 }
 .hero__h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
+  opacity: 0;
 }
 .hero__buttons {
   display: flex;
   gap: 20px;
+  opacity: 0;
 }
 .hero__link {
   background: var(--primary);
@@ -252,6 +255,7 @@ header {
   min-width: 500px;
   max-width: 1000px;
   height: 500px;
+  opacity: 0;
 }
 
 /* =============== ABOUT  =============== */
@@ -259,6 +263,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .about__text {
   padding: 20px;
@@ -289,6 +294,7 @@ header {
   padding-top: 50px;
   border-bottom: 2px solid;
   padding-top: 120px;
+  opacity: 0;
 }
 
 .movies__container {
@@ -316,6 +322,7 @@ header {
 
 .movie__link {
   text-decoration: none;
+  opacity: 0;
 }
 
 .movie__normal {
@@ -749,6 +756,7 @@ header {
   text-align: center;
   padding-top: 120px;
   font-family: "Montserrat", sans-serif;
+  opacity: 0;
 }
 .genres__list {
   display: flex;
@@ -770,6 +778,7 @@ header {
   justify-content: center;
   align-items: center;
   border: 2px solid var(--primary);
+  opacity: 0;
 }
 
 .genre::before {
@@ -848,6 +857,7 @@ header {
   text-align: center;
   border-bottom: 2px solid var(--primary);
   font-family: "Montserrat", sans-serif;
+  opacity: 0;
 }
 
 .genero {
@@ -857,6 +867,7 @@ header {
   padding: 20px;
   flex-wrap: wrap;
   gap: 20px;
+  opacity: 0;
 }
 .genero img {
   width: 200px;
@@ -892,6 +903,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  opacity: 0;
 }
 .footer-container {
   max-width: 60%;
