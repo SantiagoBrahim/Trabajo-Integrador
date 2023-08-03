@@ -17,12 +17,6 @@
   main .background-img {
     width: 800px;
   }
-  .plan label {
-    width: fit-content;
-  }
-  .plan label p {
-    font-size: 0.8rem;
-  }
 }
 @media (max-width: 768px) {
   /* ============= HEADER ============= */
@@ -30,7 +24,7 @@
     justify-content: center;
     z-index: 20;
   }
-  .login-btn {
+  .register-btn {
     display: none;
   }
 
@@ -45,9 +39,12 @@
     width: 80px;
   }
   /* ============= MAIN ============= */
+  main {
+    padding: 0;
+  }
   main .background-img {
     background-image: linear-gradient(to top, transparent, var(--background)),
-      url("../imgs/registro/fondo.jpg");
+      url("../imgs/login/fondo.jpg");
     background-size: cover;
     z-index: 0;
     width: 100vw;
@@ -60,7 +57,7 @@
     background: var(--gray);
     border-radius: 15px;
     margin: 20px;
-    padding: 5px;
+    padding: 40px;
     box-shadow: 0 0 20px 5px var(--primary3);
     border: 2px solid var(--primary3);
   }
@@ -128,14 +125,6 @@
     font-size: 1.1rem;
   }
 
-  .form__plans {
-    flex-direction: column;
-  }
-  .plan label {
-    width: 90vw;
-    background: var(--gray);
-  }
-
   .input-container {
     flex-direction: column;
   }
@@ -153,12 +142,6 @@
 
   input[type="submit"] {
     background: var(--gray);
-  }
-  .plan label p {
-    font-size: 1rem;
-  }
-  .plan label h4 {
-    font-size: 1.1rem;
   }
   .container-checkbox label {
     max-width: 250px;
