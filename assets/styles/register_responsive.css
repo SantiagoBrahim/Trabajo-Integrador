@@ -1,3 +1,55 @@
+@media (min-width: 2000px) {
+  header {
+    justify-content: center;
+    gap: 100px;
+    z-index: 20;
+  }
+  main {
+    justify-content: center;
+  }
+  main .background-img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  .form-container {
+    position: absolute;
+    z-index: 10;
+    background-color: var(--gray);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .input-container input {
+    background: var(--background);
+  }
+  .plan label {
+    background: var(--background);
+  }
+  .form-container input[type="submit"] {
+    background: var(--background);
+    width: 250px;
+  }
+  .form-container input[type="submit"]:hover {
+    background-color: var(--primary);
+  }
+
+  .form-container input[type="submit"]:active {
+    background: var(--text);
+  }
+  main .background-img {
+    background-image: linear-gradient(to left, transparent, var(--background)),
+      url("../imgs/registro/fondo.jpg");
+    background-size: cover;
+  }
+
+  .input-container label {
+    font-size: 1.3rem;
+  }
+  .input-container input {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .form-container h2 {
     font-size: 2.4rem;

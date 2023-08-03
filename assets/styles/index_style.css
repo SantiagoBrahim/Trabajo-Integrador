@@ -101,7 +101,6 @@ header {
 
 .nav__link:hover {
   background-color: var(--text);
-  /* background: linear-gradient(to top, var(--secondary), var(--gray)); */
   border-color: var(--gray);
   color: var(--gray);
 }
@@ -292,14 +291,20 @@ header {
   padding-top: 120px;
 }
 
+.movies__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .movie-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px;
-  padding-top: 50px;
   flex-wrap: wrap;
   gap: 90px;
+  padding: 30px;
+  padding-top: 50px;
 }
 
 .movie {
