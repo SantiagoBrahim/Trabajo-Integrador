@@ -185,6 +185,9 @@
 }
 
 @media (max-width: 375px) {
+  * {
+    outline: 2px solid red;
+  }
   .nav__logo {
     width: 50px;
   }
@@ -207,7 +210,7 @@
   /* =============== CARDS =============== */
   /* =============== PELÍCULAS =============== */
   .movie-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

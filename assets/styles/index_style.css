@@ -141,7 +141,6 @@ header {
 .search__input:focus {
   border-radius: 5px;
   border: 2px solid var(--text);
-  background: var(--lightgray);
 }
 
 .nav__register {
