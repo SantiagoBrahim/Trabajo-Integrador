@@ -31,36 +31,36 @@
 /* =============== BODY  =============== */
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--background);
   color: var(--text);
+  background: var(--background);
 }
 
 /* =============== HEADER  =============== */
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  max-height: 110px;
+  padding: 8px;
   background: linear-gradient(
     to bottom,
     var(--primary),
     var(--primary2),
     var(--primary3)
   );
-  padding: 8px;
-  position: sticky;
-  top: 0;
-  max-height: 110px;
   z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
 }
 
 .nav__logo {
   width: 90px;
   border: 2px solid var(--secondary3);
-  box-shadow: 0px 0px 8px 1px var(--secondary);
   border-radius: 100%;
-  transition: all 0.2s;
+  box-shadow: 0px 0px 8px 1px var(--secondary);
   opacity: 0;
+  transition: all 0.2s;
 }
 
 .nav__logo:hover {
@@ -74,21 +74,21 @@ header {
 }
 .register-btn {
   font-size: 1.2rem;
+  color: var(--text);
+  text-decoration: none;
   padding: 8px 10px;
   background: var(--secondary);
-  color: var(--text);
   border: 2px solid var(--text);
   border-radius: 10px;
-  text-decoration: none;
-  transition: all 0.2s;
   opacity: 0;
+  transition: all 0.2s;
 }
 
 .register-btn:hover {
-  background: var(--text);
   color: var(--secondary);
-  box-shadow: 0px 0px 20px 1px var(--secondary);
+  background: var(--text);
   border: 2px solid var(--secondary);
+  box-shadow: 0px 0px 20px 1px var(--secondary);
 }
 
 /* =============== MAIN  =============== */
@@ -110,10 +110,10 @@ main {
 }
 
 .form-container h2 {
-  max-width: 800px;
-  font-size: 3rem;
   font-family: "Signika", sans-serif;
+  font-size: 3rem;
   text-align: center;
+  max-width: 800px;
   opacity: 0;
 }
 
@@ -131,8 +131,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   gap: 10px;
+  padding: 20px;
 }
 
 .input-container {
@@ -149,13 +149,13 @@ main {
 }
 .input-container input {
   font-size: 1.1rem;
-  background: var(--gray);
   color: var(--text);
+  padding: 5px;
+  background: var(--gray);
   border: none;
+  border-radius: 5px;
   outline: none;
   outline: 1px solid var(--text);
-  border-radius: 5px;
-  padding: 5px;
 }
 
 .input-container input::placeholder {
@@ -163,20 +163,20 @@ main {
 }
 
 .input-container input:hover {
-  outline: 2px solid var(--primary);
   border-radius: 8px;
+  outline: 2px solid var(--primary);
 }
 .input-container input:focus {
-  outline: 2px solid var(--primary);
   border-radius: 8px;
+  outline: 2px solid var(--primary);
   box-shadow: 0 0 10px 0 var(--primary);
 }
 
 .input-container input[type="checkbox"] {
-  border: none;
-  outline: none;
   height: 20px;
   width: 20px;
+  border: none;
+  outline: none;
 }
 
 .input-container input[type="checkbox"] {
@@ -184,30 +184,30 @@ main {
 }
 
 input[type="submit"] {
+  color: var(--text);
   width: 150px;
   height: 50px;
-  border-radius: 10px;
   border: none;
-  border: 2px solid var(--text);
   background: var(--gray);
-  color: var(--text);
+  border: 2px solid var(--text);
+  border-radius: 10px;
   opacity: 0;
 }
 
 input[type="submit"]:hover {
-  background-color: var(--primary);
-  cursor: pointer;
-  border-color: var(--gray);
   font-weight: 600;
+  background-color: var(--primary);
+  border-color: var(--gray);
   box-shadow: 0 0 20px 0 var(--primary);
+  cursor: pointer;
 }
 
 input[type="submit"]:active {
-  background: var(--text);
-  color: var(--gray);
-  box-shadow: 0 0 20px 0 var(--text);
-  border-color: var(--gray);
   font-weight: 600;
+  color: var(--gray);
+  background: var(--text);
+  border-color: var(--gray);
+  box-shadow: 0 0 20px 0 var(--text);
 }
 
 a {
@@ -223,12 +223,12 @@ a:hover {
 }
 
 main .background-img {
+  color: white;
+  width: 1000px;
+  height: calc(100vh - 110px);
+  padding: 20px;
   background-image: linear-gradient(to left, transparent, var(--background)),
     url("../imgs/login/fondo.jpg");
   background-size: cover;
-  color: white;
-  padding: 20px;
-  width: 1000px;
-  height: calc(100vh - 110px);
   opacity: 0;
 }

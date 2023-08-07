@@ -1,36 +1,46 @@
 @media (min-width: 2000px) {
+  /* ============= HEADER ============= */
   header {
     justify-content: center;
     gap: 100px;
     z-index: 20;
   }
+
+  /* ============= MAIN ============= */
   main {
     justify-content: center;
   }
+
   main .background-img {
-    width: 100%;
     position: relative;
+    width: 100%;
     z-index: 0;
   }
+
+  /* ============= FORM ============= */
   .form-container {
     position: absolute;
-    z-index: 10;
-    background-color: var(--gray);
     padding: 20px;
+    background-color: var(--gray);
+    border: 2px solid var(--primary3);
     border-radius: 15px;
     box-shadow: 0 0 20px 5px var(--primary3);
-    border: 2px solid var(--primary3);
+    z-index: 10;
   }
+
   .input-container input {
     background: var(--background);
   }
+
   .plan label {
     background: var(--background);
   }
+
   .form-container input[type="submit"] {
-    background: var(--background);
     width: 250px;
+    background: var(--background);
   }
+
   .form-container input[type="submit"]:hover {
     background-color: var(--primary);
   }
@@ -38,6 +48,7 @@
   .form-container input[type="submit"]:active {
     background: var(--text);
   }
+
   main .background-img {
     background-image: linear-gradient(to left, transparent, var(--background)),
       url("../imgs/registro/fondo.jpg");
@@ -47,15 +58,31 @@
   .input-container label {
     font-size: 1.3rem;
   }
+
   .input-container input {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 1024px) {
+  /* ============= MAIN ============= */
+  main .background-img {
+    width: 800px;
+  }
+
+  .plan label {
+    width: fit-content;
+  }
+
+  .plan label p {
+    font-size: 0.8rem;
+  }
+
+  /* ============= FORM ============= */
   .form-container h2 {
     font-size: 2.4rem;
   }
+
   .form-container p {
     font-size: 1rem;
   }
@@ -64,18 +91,9 @@
     font-size: 1rem;
     max-width: 300px;
   }
+
   .input-container input {
     font-size: 1rem;
-  }
-
-  main .background-img {
-    width: 800px;
-  }
-  .plan label {
-    width: fit-content;
-  }
-  .plan label p {
-    font-size: 0.8rem;
   }
 }
 @media (max-width: 768px) {
@@ -84,6 +102,7 @@
     justify-content: center;
     z-index: 20;
   }
+
   .login-btn {
     display: none;
   }
@@ -95,41 +114,49 @@
   .title {
     font-size: 3rem;
   }
+
   .nav__logo {
     width: 80px;
   }
   /* ============= MAIN ============= */
   main .background-img {
+    width: 100vw;
     background-image: linear-gradient(to top, transparent, var(--background)),
       url("../imgs/registro/fondo.jpg");
     background-size: cover;
     z-index: 0;
-    width: 100vw;
   }
+
+  /* ============= FORM ============= */
 
   .form-container {
     position: absolute;
     top: 110px;
-    z-index: 10;
-    background: var(--gray);
-    border-radius: 15px;
-    margin: 20px;
     padding: 5px;
-    box-shadow: 0 0 20px 5px var(--primary3);
+    margin: 20px;
+    background: var(--gray);
     border: 2px solid var(--primary3);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 5px var(--primary3);
+    z-index: 10;
   }
+
   .form-container h2 {
     font-size: 2rem;
   }
+
   .form-container p {
     font-size: 1rem;
   }
+
   .input-container label {
     font-size: 0.9rem;
   }
+
   .input-container input {
     background: var(--background);
   }
+
   .plan label {
     background: var(--background);
   }
@@ -144,6 +171,7 @@
   .title {
     font-size: 2.5rem;
   }
+
   .nav__logo {
     width: 60px;
   }
@@ -162,22 +190,25 @@
     );
   }
 
+  /* ============= FORM ============= */
+
   .form-container {
     position: static;
     margin: 0;
-    padding: 0;
-    background: transparent;
     padding: 10px 0;
-    border-radius: 0;
+    background: transparent;
     border: none;
+    border-radius: 0;
     box-shadow: none;
   }
+
   .form-container form {
     padding: 20px 5px;
   }
   .form-container h2 {
     font-size: 2rem;
   }
+
   .form-container p {
     font-size: 1.1rem;
   }
@@ -185,6 +216,7 @@
   .form__plans {
     flex-direction: column;
   }
+
   .plan label {
     width: 90vw;
     background: var(--gray);
@@ -193,12 +225,14 @@
   .input-container {
     flex-direction: column;
   }
+
   .input-container label {
     font-size: 1.1rem;
   }
+
   .input-container input {
-    background: var(--gray);
     font-size: 1.2rem;
+    background: var(--gray);
   }
 
   .container-checkbox {
@@ -208,12 +242,15 @@
   input[type="submit"] {
     background: var(--gray);
   }
+
   .plan label p {
     font-size: 1rem;
   }
+
   .plan label h4 {
     font-size: 1.1rem;
   }
+
   .container-checkbox label {
     max-width: 250px;
   }
@@ -224,15 +261,18 @@
   .title {
     font-size: 2.1rem;
   }
+
   .nav__logo {
     width: 50px;
   }
   /* ============= MAIN ============= */
+  /* ============= FORM ============= */
 
   .container-checkbox label {
     font-size: 1rem;
     max-width: 200px;
   }
+
   .form-container p {
     font-size: 1rem;
   }

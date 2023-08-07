@@ -116,26 +116,26 @@ header {
 }
 
 .search__input {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
   width: 200px;
   height: 35px;
+  padding: 5px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid var(--text);
   outline: none;
-  padding: 5px;
   transition: all 0.1s;
-  color: var(--text);
-  font-family: "Poppins", sans-serif;
 }
 
 .search__input::placeholder {
-  color: var(--text);
   font-family: "Poppins", sans-serif;
+  color: var(--text);
 }
 
 .search__input:hover {
-  border-radius: 5px;
   border: 2px solid var(--text);
+  border-radius: 5px;
 }
 
 .search__input:focus {
@@ -145,20 +145,20 @@ header {
 
 .nav__register {
   font-size: 1.2rem;
+  text-decoration: none;
   padding: 8px 10px;
-  background: var(--secondary);
   color: var(--text);
+  background: var(--secondary);
   border: 2px solid var(--text);
   border-radius: 10px;
-  text-decoration: none;
   transition: all 0.2s;
 }
 
 .nav__register:hover {
-  background: var(--text);
   color: var(--secondary);
-  box-shadow: 0px 0px 20px 1px var(--secondary);
+  background: var(--text);
   border: 2px solid var(--secondary);
+  box-shadow: 0px 0px 20px 1px var(--secondary);
 }
 
 .cel-nav {
@@ -172,10 +172,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  position: fixed;
   height: 95%;
   width: 100%;
   background: linear-gradient(to top, var(--background), var(--gray));
-  position: fixed;
   z-index: 10;
 }
 .menu {
@@ -191,11 +191,11 @@ header {
 
 /* =============== HERO  =============== */
 .hero {
-  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 30px;
   background: linear-gradient(
     to top,
     transparent,
@@ -213,15 +213,15 @@ header {
 }
 .hero__h2 {
   font-family: "Signika", sans-serif;
-  font-style: italic;
   font-size: 3rem;
+  font-style: italic;
   font-weight: 700;
   opacity: 0;
 }
-.hero__h3 {
+.hero__p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   font-size: 1.2rem;
+  font-weight: 400;
   opacity: 0;
 }
 .hero__buttons {
@@ -230,30 +230,30 @@ header {
   opacity: 0;
 }
 .hero__link {
-  background: var(--primary);
   font-size: 1.3rem;
   color: var(--text);
   text-decoration: none;
   padding: 8px 15px;
+  background: var(--primary);
   border: 2px solid var(--gray);
   border-radius: 10px;
   transition: all 0.2s;
 }
 
 .hero__link:hover {
+  color: var(--gray);
   background: var(--text);
   border-color: var(--primary);
-  color: var(--gray);
   box-shadow: 0px 0px 20px 1px var(--primary);
 }
 
 .hero__img {
-  border-radius: 30px;
-  border: 3px solid var(--primary);
   object-fit: cover;
   min-width: 500px;
   max-width: 1000px;
   height: 500px;
+  border: 3px solid var(--primary);
+  border-radius: 30px;
   opacity: 0;
 }
 
@@ -265,21 +265,21 @@ header {
   opacity: 0;
 }
 .about__text {
-  padding: 20px;
-  margin-top: 40px;
+  font-size: 1.1rem;
+  font-weight: 300;
   text-align: center;
   max-width: 1000px;
-  font-weight: 300;
-  font-size: 1.1rem;
+  padding: 20px;
+  margin-top: 40px;
+  background: var(--background);
   border: 2px solid var(--secondary);
   border-radius: 20px;
-  background: var(--background);
   box-shadow: 0px 0px 20px var(--secondary);
 }
 .about__text span {
   font-family: "Signika", sans-serif;
-  font-weight: 800;
   font-size: 1.2rem;
+  font-weight: 800;
 }
 
 /* =============== CARDS  =============== */
@@ -290,10 +290,8 @@ header {
   font-family: "Montserrat", sans-serif;
   font-size: 2.6rem;
   text-align: center;
-  padding-top: 50px;
-  border-bottom: 2px solid;
   padding-top: 120px;
-  opacity: 0;
+  border-bottom: 2px solid;
 }
 
 .movies__container {
@@ -313,10 +311,10 @@ header {
 }
 
 .movie {
-  width: 220px;
-  position: relative;
-  height: 450px;
   color: var(--text);
+  position: relative;
+  width: 220px;
+  height: 450px;
 }
 
 .movie__link {
@@ -327,8 +325,8 @@ header {
 .movie__normal {
   padding: 10px;
   background: var(--gray);
-  border-radius: 10px;
   background-position: center;
+  border-radius: 10px;
   transition: all 0.8s;
 }
 
@@ -336,14 +334,14 @@ header {
   width: 200px;
   height: 300px;
   object-fit: cover;
-  border-radius: 10px;
   border: 2px solid;
+  border-radius: 10px;
 }
 
 .movie__normal h4 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -352,6 +350,9 @@ header {
 /* HOVER */
 
 .movie__hover {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   position: absolute;
   top: 0;
   left: 0;
@@ -359,9 +360,6 @@ header {
   padding: 10px;
   opacity: 0;
   transition: all 0.4s;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .movie-hover__img {
@@ -389,9 +387,9 @@ header {
 }
 
 .movie__min-age {
+  padding: 5px;
   background: var(--lightgray);
   border-radius: 8px;
-  padding: 5px;
 }
 
 .movie__genre {
@@ -408,11 +406,11 @@ header {
   border-radius: 8px;
 }
 .movie__qualification {
-  text-align: center;
-  transform: translateY(-40px);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  transform: translateY(-40px);
 }
 .movie__qualification span {
   font-size: 1.5rem;
@@ -459,19 +457,19 @@ header {
     transform: translateY(20px);
   }
   to {
-    transform: translateY(-60px);
     opacity: 1;
+    transform: translateY(-70px);
   }
 }
 
 @keyframes titleHover {
   from {
-    transform: translateY(-40px);
     opacity: 0;
+    transform: translateY(-40px);
   }
   to {
-    transform: translateY(-50px);
     opacity: 1;
+    transform: translateY(-50px);
   }
 }
 
@@ -752,32 +750,32 @@ header {
 
 /* =============== LISTA DE GENEROS =============== */
 .genre-list__title {
+  font-family: "Montserrat", sans-serif;
   font-size: 2.6rem;
   text-align: center;
   padding-top: 120px;
-  font-family: "Montserrat", sans-serif;
   opacity: 0;
 }
 .genres__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   padding: 20px;
   background: linear-gradient(to bottom, var(--gray), var(--background));
   box-shadow: 0px 0px 20px 0px var(--gray);
-  gap: 10px;
-  flex-wrap: wrap;
 }
 
 .genre {
-  border-radius: 10px;
-  width: 300px;
-  height: 100px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 300px;
+  height: 100px;
+  position: relative;
   border: 2px solid var(--primary);
+  border-radius: 10px;
   opacity: 0;
 }
 
@@ -788,17 +786,17 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all 0.2s;
   border-radius: 10px;
+  transition: all 0.2s;
 }
 
 .genre p {
-  position: absolute;
-  color: var(--primary);
-  background-color: var(--gray);
-  padding: 5px;
-  border-radius: 10px;
   font-size: 1.5rem;
+  color: var(--primary);
+  position: absolute;
+  padding: 5px;
+  background-color: var(--gray);
+  border-radius: 10px;
   transition: all 0.2s;
 }
 
@@ -807,7 +805,7 @@ header {
 }
 
 .genre:hover > p {
-  color: #fff;
+  color: var(--text);
 }
 
 /* CAMBIOS GENERO ACCIÓN */
@@ -822,24 +820,24 @@ header {
   background: url(../imgs/comedia.avif);
   background-size: 130%;
   background-repeat: no-repeat;
-  filter: grayscale(1);
   background-position: 100%;
+  filter: grayscale(1);
 }
 /* CAMBIOS GENERO DRAMA */
 .genres__drama::before {
   background: url(../imgs/drama.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(1);
   background-position: 100%;
+  filter: grayscale(1);
 }
 /* CAMBIOS GENERO TERROR */
 .genres__terror::before {
   background: url(../imgs/terror.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(1);
   background-position: 100%;
+  filter: grayscale(1);
 }
 /* CAMBIOS GENERO INFANTIL */
 .genres__infantiles::before {
@@ -851,12 +849,12 @@ header {
 
 /* =============== GENEROS =============== */
 .genre__title {
-  padding: 5px;
-  padding-top: 120px;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.2rem;
   text-align: center;
+  padding: 5px;
+  padding-top: 120px;
   border-bottom: 2px solid var(--primary);
-  font-family: "Montserrat", sans-serif;
   opacity: 0;
 }
 
@@ -864,17 +862,17 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 20px;
   opacity: 0;
 }
 .genero img {
   width: 200px;
   height: 300px;
   object-fit: cover;
-  border-radius: 10px;
   border: 2px solid var(--primary);
+  border-radius: 10px;
   transition: all 0.2s;
 }
 
@@ -885,8 +883,8 @@ header {
   transition: all 0.2s;
 }
 .genero a:hover {
-  box-shadow: 0px 0px 20px 0 var(--primary);
   transform: scale(1.1);
+  box-shadow: 0px 0px 20px 0 var(--primary);
 }
 
 .genero a:hover > img {
@@ -895,8 +893,8 @@ header {
 
 /* =============== FOOTER =============== */
 .divisor-main-footer {
-  border: 2px solid var(--secondary);
   margin-top: 50px;
+  border: 2px solid var(--secondary);
 }
 footer {
   display: flex;
@@ -919,8 +917,8 @@ footer {
   transition: all 0.2s;
 }
 .footer__redes a:hover {
-  transform: scale(1.4);
   color: var(--primary);
+  transform: scale(1.4);
 }
 .footer__info {
   display: grid;
@@ -966,10 +964,11 @@ footer {
 }
 .form__input-container input {
   font-family: "Poppins", sans-serif;
+  color: var(--text);
+  padding: 5px;
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--text);
-  color: var(--text);
   outline: none;
   transition: all 0.1s;
 }
@@ -978,12 +977,13 @@ footer {
   color: #ffffffa8;
 }
 .contact__form textarea {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
   resize: none;
   width: 200px;
   height: 100px;
+  padding: 5px;
   background: transparent;
-  color: var(--text);
-  font-family: "Poppins", sans-serif;
   transition: all 0.1s;
 }
 
@@ -992,57 +992,57 @@ footer {
 }
 
 .contact__form input[type="submit"] {
-  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--text);
   height: 40px;
   width: 150px;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
   background: transparent;
-  color: var(--text);
   border: 2px solid var(--text);
-  font-weight: 600;
+  border-radius: 10px;
   transition: all 0.1s;
 }
 
 .form__input-container input:hover {
-  outline: 1px solid var(--primary);
   border: none;
   border-radius: 5px;
+  outline: 1px solid var(--primary);
 }
 .form__input-container input:focus {
-  border: none;
-  outline: 1px solid var(--primary);
-  border-radius: 5px;
   background: var(--gray);
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid var(--primary);
 }
 
 .contact__form textarea:hover {
-  border-radius: 8px;
   border-color: var(--primary);
+  border-radius: 8px;
 }
 .contact__form textarea:focus {
-  outline: none;
-  border-radius: 8px;
-  border-color: var(--primary);
   background: var(--gray);
+  border-color: var(--primary);
+  border-radius: 8px;
+  outline: none;
 }
 
 .contact__form input[type="submit"]:hover {
   background: var(--gray);
-  cursor: pointer;
   border-color: var(--primary);
+  cursor: pointer;
 }
 
 .contact__form input[type="submit"]:active {
+  color: var(--background);
   background: var(--text);
   border-color: var(--secondary);
-  color: var(--background);
 }
 
 .footer__copyright {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ffffff60;
   margin: 10px;
   margin-top: 15px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #ffffff60;
 }

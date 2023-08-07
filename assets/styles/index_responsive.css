@@ -1,4 +1,5 @@
 @media (min-width: 2000px) {
+  /* =============== HEADER =============== */
   header {
     display: flex;
     justify-content: center;
@@ -6,29 +7,35 @@
   .desktop-nav {
     width: 1500px;
   }
+
+  /* =============== CARDS =============== */
+  /* PELÍCULAS */
   .movie-list {
     justify-content: center;
     max-width: 1600px;
   }
 
+  /* GÉNEROS */
   .genres__list {
     justify-content: center;
     gap: 30px;
   }
 
+  /* PELÍCULAS POR GÉNERO */
   .genero {
     justify-content: center;
     gap: 90px;
   }
 
+  /* =============== FOOTER =============== */
   .form__input-container input {
     font-size: 1.1rem;
   }
 
   .contact__form textarea {
+    font-size: 1.1rem;
     width: 100%;
     height: 150px;
-    font-size: 1.1rem;
   }
 
   .contact__form input[type="submit"] {
@@ -59,7 +66,7 @@
   .hero__h2 {
     font-size: 2.8rem;
   }
-  .hero__h3 {
+  .hero__p {
     font-size: 1.1rem;
   }
   .hero__link {
@@ -71,7 +78,7 @@
   }
 
   /* =============== CARDS =============== */
-  /* =============== PELÍCULAS =============== */
+  /* PELÍCULAS */
   .movie-list {
     gap: 150px;
   }
@@ -80,27 +87,25 @@
 @media (max-width: 900px) {
   /* =============== HEADER =============== */
   .desktop-nav .ul,
-  .desktop-nav .nav__register {
+  .desktop-nav .nav__register,
+  .search__mobile {
     display: none;
   }
   .cel-nav {
     display: flex;
-  }
-  .search__mobile {
-    display: none;
   }
   .nav__ul {
     flex-direction: column;
     gap: 70px;
   }
   .nav__link {
-    background-color: var(--primary);
-    padding: 15px;
     font-size: 1.4rem;
+    padding: 15px;
+    background-color: var(--primary);
   }
   .nav__register {
-    padding: 15px 30px;
     font-size: 1.4rem;
+    padding: 15px 30px;
   }
   /* =============== HERO =============== */
   .hero {
@@ -137,8 +142,8 @@
   }
   /* =============== ABOUT =============== */
   .about__text {
-    max-width: 600px;
     font-size: 1rem;
+    max-width: 600px;
   }
   .about__text span {
     font-size: 1.1rem;
@@ -156,9 +161,9 @@
     font-size: 1.2rem;
   }
   .contact__form textarea {
+    font-size: 1rem;
     width: 100%;
     height: 200px;
-    font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
@@ -185,9 +190,6 @@
 }
 
 @media (max-width: 375px) {
-  * {
-    outline: 2px solid red;
-  }
   .nav__logo {
     width: 50px;
   }

@@ -1,9 +1,11 @@
 @media (min-width: 2000px) {
+  /* =============== HEADER  =============== */
   header {
     justify-content: center;
     gap: 100px;
     z-index: 20;
   }
+  /* =============== MAIN  =============== */
   main {
     justify-content: center;
   }
@@ -16,23 +18,24 @@
       url("../imgs/login/fondo.jpg");
     background-size: cover;
   }
+  /* =============== FORM  =============== */
   .form-container {
     position: absolute;
-    z-index: 10;
-    background-color: var(--gray);
     padding: 60px;
+    background-color: var(--gray);
     border-radius: 15px;
+    z-index: 10;
   }
+
   .input-container input {
     background: var(--background);
   }
-  .plan label {
-    background: var(--background);
-  }
+
   .form-container input[type="submit"] {
-    background: var(--background);
     width: 250px;
+    background: var(--background);
   }
+
   .form-container input[type="submit"]:hover {
     background-color: var(--primary);
   }
@@ -50,9 +53,18 @@
 }
 
 @media (max-width: 1024px) {
+  /* =============== MAIN  =============== */
+
+  main .background-img {
+    width: 800px;
+  }
+
+  /* =============== FORM  =============== */
+
   .form-container h2 {
     font-size: 2.4rem;
   }
+
   .form-container p {
     font-size: 1rem;
   }
@@ -61,16 +73,14 @@
     font-size: 1rem;
     max-width: 300px;
   }
+
   .input-container input {
     font-size: 1rem;
-  }
-
-  main .background-img {
-    width: 800px;
   }
 }
 @media (max-width: 768px) {
   /* ============= HEADER ============= */
+
   header {
     justify-content: center;
     z-index: 20;
@@ -79,38 +89,39 @@
     display: none;
   }
 
-  main {
-    flex-direction: column-reverse;
-  }
-
   .title {
     font-size: 3rem;
   }
   .nav__logo {
     width: 80px;
   }
+
   /* ============= MAIN ============= */
+
   main {
+    flex-direction: column-reverse;
     padding: 0;
   }
   main .background-img {
+    width: 100vw;
     background-image: linear-gradient(to top, transparent, var(--background)),
       url("../imgs/login/fondo.jpg");
     background-size: cover;
     z-index: 0;
-    width: 100vw;
   }
+
+  /* ============= FORM ============= */
 
   .form-container {
     position: absolute;
     top: 110px;
-    z-index: 10;
-    background: var(--gray);
-    border-radius: 15px;
     margin: 20px;
     padding: 40px;
-    box-shadow: 0 0 20px 5px var(--primary3);
+    background: var(--gray);
     border: 2px solid var(--primary3);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 5px var(--primary3);
+    z-index: 10;
   }
   .form-container h2 {
     font-size: 2rem;
@@ -156,14 +167,15 @@
     );
   }
 
+  /* ============= FORM ============= */
+
   .form-container {
     position: static;
     margin: 0;
-    padding: 0;
-    background: transparent;
     padding: 10px 0;
-    border-radius: 0;
+    background: transparent;
     border: none;
+    border-radius: 0;
     box-shadow: none;
   }
   .form-container form {
@@ -183,8 +195,8 @@
     font-size: 1.1rem;
   }
   .input-container input {
-    background: var(--gray);
     font-size: 1.2rem;
+    background: var(--gray);
   }
 
   .container-checkbox {
@@ -208,6 +220,8 @@
     width: 50px;
   }
   /* ============= MAIN ============= */
+
+  /* ============= FORM ============= */
 
   .container-checkbox label {
     font-size: 1rem;
