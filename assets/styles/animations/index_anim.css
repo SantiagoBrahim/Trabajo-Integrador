@@ -55,7 +55,7 @@
 /* =============== HEADER  =============== */
 
 .desktop-nav {
-  animation: fadeDown 1s;
+  animation: fadeDown 1s forwards;
 }
 
 /* =============== HERO  =============== */
