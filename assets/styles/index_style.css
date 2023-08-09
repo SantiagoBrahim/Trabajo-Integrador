@@ -367,12 +367,16 @@ header {
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
-  transform: translateY(-70px);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 1s;
 }
 
 .movie-hover__title {
   width: 200px;
   transform: translateY(-40px);
+  opacity: 0;
+  transition: all 1s;
 }
 
 .movie-hover__text {
@@ -442,35 +446,13 @@ header {
 }
 
 .movie:hover > .movie__hover > .movie-hover__img {
-  animation: imgHover 1s forwards;
+  opacity: 1;
+  transform: translateY(-70px);
 }
 
 .movie:hover > .movie__hover > .movie-hover__title {
-  animation: titleHover 1s forwards;
-}
-
-/* ================== ANIMACIONES ================== */
-
-@keyframes imgHover {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-70px);
-  }
-}
-
-@keyframes titleHover {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50px);
-  }
+  opacity: 1;
+  transform: translateY(-50px);
 }
 
 /* =============== PELÍCULAS POPULARES  =============== */
